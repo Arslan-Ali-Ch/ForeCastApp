@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:padding="10dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/day"
+                android:textSize="16sp"
+                android:text="Monday"
+                android:textColor="@color/teal_700"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/img"
+                android:src="@mipmap/ic_launcher"
+
+
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:textColor="@color/teal_700"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/weather"
+                android:text="snow"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_alignBaseline="@+id/img"
+                android:layout_below="@+id/day"/>
+            <TextView
+                android:textColor="@color/teal_700"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:id="@+id/temp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="23 C"
+                android:layout_alignBaseline="@+id/weather"
+                />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
